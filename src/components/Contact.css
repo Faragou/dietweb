@@ -1,0 +1,36 @@
+/* Contact.css */
+
+#contact {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    
+}
+
+
+
+.contact-icon:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon i {
+    font-size: 36px;
+}
+
+
+.google-map {
+    margin: 20px 20px;
+    
+}

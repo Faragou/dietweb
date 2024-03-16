@@ -1,0 +1,50 @@
+/* References.css */
+
+
+.reference-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.reference-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    flex: 1 1 300px;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.reference-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reference-box-content {
+    padding: 20px;
+}
+
+.reference-box p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+#references {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  #references h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  #references p {
+    color: #666;
+  }
+  

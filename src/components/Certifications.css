@@ -1,0 +1,38 @@
+/* Certifications.css */
+
+#certifications {
+    padding: 20px;
+    background-color: #d4d0d0;
+    text-align: center;
+}
+
+.certification-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.certification-icon {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 1 calc(25% - 40px); /* Adjust width to fit four icons per row */
+    max-width: calc(25% - 40px); /* Adjust max-width to fit four icons per row */
+}
+
+.certification-icon:hover {
+    transform: rotate(15deg); /* Rotate the icon on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1); /* Change box shadow */
+}
+
+.certification-icon p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+

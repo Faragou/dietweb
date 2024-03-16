@@ -1,0 +1,36 @@
+/* Home.css */
+
+#home {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 10px;
+    align-items: center; /* Vertically center the content */
+}
+
+#home p {
+    color: #666;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-right: 20px; 
+}
+
+#zoldseg {
+    flex-shrink: 0; 
+}
+
+#zoldseg img {
+    width: 200px; 
+    height: auto; 
+    border-radius: 15px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+
+#zoldseg img:hover {
+    border-color: #ff4500;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.8);
+}

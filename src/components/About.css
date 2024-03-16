@@ -1,0 +1,34 @@
+/* About.css */
+
+#about {
+    background-color: #d1caca;
+    padding: 20px;
+  }
+  
+#about h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+#about p {
+    color: #666;
+  }
+
+#Kep-Kati img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    border: 4px solid #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease; 
+}
+  
+  
+  #Kep-Kati img:hover {
+    transform: scale(1.1); 
+  }
+
+  
