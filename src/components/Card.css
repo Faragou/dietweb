@@ -1,0 +1,39 @@
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: hsl(200deg, 5%, calc(100% - var(--abs-offset) * 60%));
+  border-radius: 1rem;
+  color: #9CA3AF;
+  text-align: justify;
+  transition: all 0.3s ease-out;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 0.7em;
+    color: #1F2937;
+}
+
+.card p, h2{
+    transition: all 0.3s ease-out;
+    opacity: var(--active);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    
+    
+}
+.card p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}

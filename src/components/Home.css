@@ -1,10 +1,16 @@
 /* Home.css */
 
 #home {
-    display: flex;
     background-color: #f0f0f0;
     padding: 10px;
     align-items: center; /* Vertically center the content */
+}
+
+#home h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
 }
 
 #home p {
@@ -20,6 +26,9 @@
 }
 
 #zoldseg img {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 2rem;
     width: 200px; 
     height: auto; 
     border-radius: 15px;
