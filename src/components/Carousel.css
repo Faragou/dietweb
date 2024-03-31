@@ -40,6 +40,7 @@ justify-content: center;
   cursor: pointer;
   user-select: none;
   background: unset;
+  background-color: none;
   border: unset;
   
 }

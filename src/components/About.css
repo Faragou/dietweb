@@ -1,23 +1,32 @@
 /* About.css */
 
 #about {
-    background-color: #d1caca;
+     background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bbd2c5, #536976);
     padding: 20px;
   }
   
 #about h2 {
-    color: #333;
+    color: #000000;
     text-align: center;
   }
   
 #about p {
-    color: #666;
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: center;
+    max-width: 100%;
+    
   }
 
-#Kep-Kati img {
+#Kep-barki img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2.5rem;
     width: 200px; 
     height: 200px; 
     border-radius: 50%; 
@@ -27,7 +36,7 @@
 }
   
   
-  #Kep-Kati img:hover {
+  #Kep-barki img:hover {
     transform: scale(1.1); 
   }
 

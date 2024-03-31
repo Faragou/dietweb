@@ -1,34 +1,40 @@
 /* Home.css */
 
 #home {
-    background-color: #f0f0f0;
+    background: #bbd2c5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bbd2c5, #536976);
     padding: 10px;
-    align-items: center; /* Vertically center the content */
 }
 
-#home h1 {
+.header {
     text-align: center;
-    font-size: 2.5em;
     margin-bottom: 20px;
-    
 }
 
-#home p {
-    color: #666;
-    text-align: left;
+.content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Ha a tartalom nagyobb a rendelkezésre álló helynél, a flexbox automatikusan fog több sort létrehozni */
+}
+
+#szoveg-balra {
+    color: #000000;
+    margin: 0;
     font-size: 1.2em;
+    font-weight: 400;
     line-height: 1.5em;
-    margin-right: 20px; 
+    text-align: left;
+    max-width: 40%; /* A szöveg maximális szélessége a felét foglalja el a tartalom szélességéből */
+    margin-right: 20px; /* Távolság a jobb oldaltól */
 }
 
 #zoldseg {
-    flex-shrink: 0; 
+    flex-grow: 1; /* A kép automatikusan kitölti a rendelkezésre álló helyet */
+    text-align: right;
 }
 
 #zoldseg img {
-    display: block;
-    margin-left: auto;
-    margin-bottom: 2rem;
     width: 200px; 
     height: auto; 
     border-radius: 15px;
@@ -37,9 +43,8 @@
     transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
-
 #zoldseg img:hover {
-    border-color: #ff4500;
+    border-color: #bbd2c5;
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 69, 0, 0.8);
+    box-shadow: 0 0 20px #bbd2c5;
 }

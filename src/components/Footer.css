@@ -1,7 +1,7 @@
 /* Footer.css */
 
 footer {
-    background-color: #333;
+    background-color: #181717;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -18,13 +18,19 @@ footer {
     padding: 0;
   }
   
-  .footer-links li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  .footer-links li a {
+
+  .footer-links button {
+    background-color: #181717;
+    font-size: medium;
     color: #fff;
-    text-decoration: none;
-  }
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-links button:hover {
+    background-color: #555;
+}
   
