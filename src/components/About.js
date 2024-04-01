@@ -6,15 +6,22 @@ import Stockphoto from '../assets/en.jpg';
 
 const About = () => {
   return (
-    <div id="about">
+    <section id="about">
       <h2>About Us</h2>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <div id='Kep-barki'>
-        <img src={Stockphoto} alt="Me" />
+      <div className="content-container">
+      <div className="box-container">
+
+        <div id="szoveg-container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod magna et velit suscipit, vel dictum nisl luctus. Integer nec fermentum sapien. Fusce ullamcorper sapien velit, in faucibus odio condimentum et. Donec eu odio vel justo malesuada tincidunt. Nam nec convallis purus.
+          </p>
+          </div>
+        <div id='Kep-barki'>
+          <img src={Stockphoto} alt="Me" />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

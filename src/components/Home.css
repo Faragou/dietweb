@@ -25,19 +25,27 @@
     font-weight: 400;
     line-height: 1.5em;
     text-align: left;
-    max-width: 40%; /* A szöveg maximális szélessége a felét foglalja el a tartalom szélességéből */
-    margin-right: 20px; /* Távolság a jobb oldaltól */
+    max-width: 40%; 
+    margin-right: 20px; 
+    border: #bbd2c5;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    background-color: #4baf86;
+    
+
 }
 
 #zoldseg {
-    flex-grow: 1; /* A kép automatikusan kitölti a rendelkezésre álló helyet */
+    flex-grow: 1; 
     text-align: right;
 }
 
 #zoldseg img {
-    width: 200px; 
-    height: auto; 
+    width: 15rem; 
+    height: 15rem; 
     border-radius: 15px;
+    margin : 0 0 0 20px;
     border: 2px solid transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     transition: border-color 0.3s ease, transform 0.3s ease;

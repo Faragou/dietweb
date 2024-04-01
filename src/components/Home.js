@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './Home.css';
+import Kepecske from '../assets/excersice.jpg';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
                 </p>
                 <div id='zoldseg'>
                     <img src="https://hips.hearstapps.com/hmg-prod/images/heart-healthy-food-1580231690.jpg?crop=0.668xw:1.00xh;0.0849xw,0&resize=980:*" alt="Vegetables" />
+                    <img src={Kepecske} alt="Vegetables" />
                 </div>
             </div>
         </div>

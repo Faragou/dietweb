@@ -13,6 +13,7 @@ const Footer = ({ scrollToSection }) => {
         <ul className="footer-links">
           <button onClick={() => scrollToSection('home')}>Home</button>
           <button onClick={() => scrollToSection('about')}>About</button>
+          <button onClick={() => scrollToSection('services')}>Services</button>
           <button onClick={() => scrollToSection('references')}>References</button>
           <button onClick={() => scrollToSection('certifications')}>Certifications</button>
           <button onClick={() => scrollToSection('contact')}>Contact</button>
