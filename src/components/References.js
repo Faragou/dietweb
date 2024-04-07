@@ -2,7 +2,6 @@
 
 import React from 'react';
 import './References.css';
-
 import Card from './Card';
 import Carousel from './Carousel';
 
