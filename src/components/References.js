@@ -17,6 +17,18 @@ const References = () => {
     return (
         <div id="references">
             <h2>References</h2>
+
+            <div className="reviews-section">
+            <h3>What Our Customers Say</h3>
+            <div className="review-card">
+              <p><b>"The personalized meal plans have changed my life! I'm healthier and happier than ever."</b></p>
+              <p><b>- Sarah J.</b></p>
+            </div>
+            <div className="review-card">
+              <p><b>"Thanks to their guidance, I’ve lost 20 pounds in 3 months while eating delicious, healthy food."</b></p>
+              <p><b>- Michael W.</b></p>
+            </div>
+            </div>
             <div className="reference-container">
                 <Carousel>
       {referencess.map((ref, index) => (
@@ -24,6 +36,7 @@ const References = () => {
         ))}
       </Carousel>
             </div>
+            
         </div>
     );
 };

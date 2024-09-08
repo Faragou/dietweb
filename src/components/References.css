@@ -1,52 +1,62 @@
 /* References.css */
 
-
-.reference-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-}
-
-.reference-box {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 10px;
-    flex: 1 1 300px;
-    max-width: 300px;
-    overflow: hidden;
-}
-
-.reference-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.1);
-}
-
-.reference-box-content {
-    padding: 20px;
-}
-
-.reference-box p {
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-
 #references {
-     background: #bbd2c5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
+  scroll-snap-align: start;
+  min-height: 100vh;
+  background: #bbd2c5;
+  background: -webkit-linear-gradient(to right, #bbd2c5, #536976);
   background: linear-gradient(to right, #bbd2c5, #536976);
-    padding: 20px;
+  padding: 50px;
+  text-align: center;
+}
+
+#references h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#references p {
+  color: #666;
+}
+
+/* Reviews Section */
+.reviews-section {
+  background-color: #536976;
+  color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.review-card {
+  background-color: #81bba3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  max-width: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Reference container for the carousel */
+.reference-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .reviews-section, .review-card {
+    max-width: 90%;
   }
-  
-  #references h2 {
-    color: #333;
-    text-align: center;
-  }
-  
-  #references p {
-    color: #666;
-  }
-  
+}

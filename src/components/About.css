@@ -1,32 +1,35 @@
 /* About.css */
 
 #about {
+    scroll-snap-align: start; /* Snap alignment at the start */
+    min-height: 100vh; /* Full viewport height */
     background: #bbd2c5; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #bbd2c5, #536976);
-    padding: 20px;
+    padding: 50px;
 }
 
-#about h2 {
+#about h2, #about h3 {
     color: #000000;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #about .content-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; /* If the content exceeds the available space, the flexbox automatically wraps to multiple rows */
+    flex-wrap: wrap; /* Wraps content if it exceeds space */
     max-width: 1200px;
     margin: 0 auto;
 }
 
-#about .content-container > div {
-    background-color: #81bba3; /* Set background color for the box */
-    padding: 3rem; /* Add some padding inside the box */
-    border-radius: 5rem; /* Add rounded corners to the box */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Add a subtle shadow effect to the box */
-    margin: 5rem; /* Add margin around the box */
+#about .box-container {
+    background-color: #81bba3; /* Background color for the box */
+    
+    border-radius: 2rem; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Subtle shadow effect */
+    
 }
 
 #about p {
@@ -40,7 +43,7 @@
 
 #Kep-barki img {
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 0 auto; /* Center the image */
     margin-bottom: 2.5rem;
     width: 200px;
     height: 200px;
@@ -52,4 +55,73 @@
 
 #Kep-barki img:hover {
     transform: scale(1.1);
+}
+
+/* Mission section */
+.mission-section {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Reviews section */
+.reviews-section {
+    background-color: #536976;
+    color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.review-card {
+    background-color: #81bba3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Meet the Team section */
+.team-section {
+    text-align: center;
+    margin: 50px auto;
+    color: #fff;
+}
+
+.team-photo-container {
+    margin: 20px 0;
+}
+
+.team-photo-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+
+.team-photo-container img:hover {
+    transform: scale(1.1);
+}
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    #about .content-container {
+        flex-direction: column;
+    }
+
+    .box-container {
+        margin: 20px 0;
+    }
+
+    .team-photo-container img {
+        width: 100%;
+    }
 }

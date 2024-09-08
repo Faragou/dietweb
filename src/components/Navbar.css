@@ -1,61 +1,102 @@
 /* Navbar.css */
 
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.navbar a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background-color: #181717;
-    color: #ffffff;
-}
-
-.navbar-right {
-    display: flex;
-}
-
-.navbar-right button {
-    margin-right: 10px;
-    background: none;
-    border: none;
-    color: inherit;
-    font-size: 16px;
-    cursor: pointer;
+  position: flex;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #181717;
+  color: #ffffff;
 }
 
 .navbar-left img {
-    width: 25%;
-    height: auto;
-    background-color: white;
-    border-radius: 50%;
-
+  width: 100px;
+  height: auto;
+  background-color: white;
+  border-radius: 50%;
 }
 
-
-
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
 
 .navbar-right button {
-    background-color: #181717;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #181717;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .navbar-right button:hover {
-    background-color: #555;
+  background-color: #555;
+}
+
+/* Hamburger Menu Icon */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.menu-toggle i {
+  color: #fff; /* Ensure the hamburger icon is visible */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        width: 97%;
+    }
+  .navbar-right {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #181717;
+    width: 100%;
+    text-align: center;
+     z-index: 1001; /* Make sure the menu stays above other page content */
+  }
+
+  .navbar-right.open {
+    display: flex;
+  }
+
+  .navbar-right button {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+    z-index: 1001; /* Ensure the hamburger menu stays above the navbar content */
+  }
+
+  .navbar-left img {
+    width: 80px; /* Adjust logo size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-toggle {
+    font-size: 24px; /* Make the hamburger menu a bit smaller on very small screens */
+  }
+.navbar {
+        width: 92%;
+    }
+  .navbar-left img {
+    width: 50px; /* Smaller logo on very small screens */
+  }
 }

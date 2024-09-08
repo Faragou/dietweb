@@ -1,7 +1,9 @@
 /* Certifications.css */
 
 #certifications {
-    padding: 20px;
+    scroll-snap-align: start; /* Snap alignment at the start */
+    height: 100vh; /* Full viewport height */
+    padding: 50px;
     background: #bbd2c5; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #bbd2c5, #536976);
@@ -109,12 +111,12 @@
     }
 }
 
-.certi-gomb {
+/*.certi-gomb {
     color: var(--bg);
     height: 10rem;
     width: 200px;
     font-weight: 1000;
-    /*     background-image: linear-gradient(90deg, #fcecfe, #fbf6e7, #e6fcf5); */
+    /*     background-image: linear-gradient(90deg, #fcecfe, #fbf6e7, #e6fcf5); 
     
     background-color: #0093E9;
     background-image: linear-gradient(160deg, #437c5c, #536976 100%);
@@ -125,6 +127,30 @@
     box-shadow: 0 2px 3px 1px hsl(var(--glow-hue) 50% 20% / 50%),
         inset 0 -10px 20px -10px hsla(var(--shadow-hue), 10%, 90%, 95%);
     border-radius: 0.66em;
+    scale: 1;
+    transition: all var(--spring-duration) var(--spring-easing);
+}
+*/
+
+.certi-gomb {
+    color: var(--bg);
+    height: 10rem;
+    width: 200px;
+    font-weight: 1000;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #437c5c, #536976 100%);
+    padding: 0.8em 1.4em;
+    position: relative;
+    isolation: isolate;
+    box-shadow: 0 2px 3px 1px hsl(var(--glow-hue) 50% 20% / 50%),
+        inset 0 -10px 20px -10px hsla(var(--shadow-hue), 10%, 90%, 95%);
+    border-radius: 0.66em;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
     scale: 1;
     transition: all var(--spring-duration) var(--spring-easing);
 }
@@ -161,6 +187,7 @@
     mix-blend-mode: plus-lighter;
     animation: shimmer 1s linear infinite both;
 }
+
 .certi-gomb:hover .shimmer::before,
 .certi-gomb:hover .shimmer::after,
 .certi-gomb.active .shimmer::before,
@@ -214,6 +241,38 @@
     animation: text 0.66s ease-in 1 both;
 }
 
+@media (max-width: 768px) {
+    .certi-gomb {
+        height: 8rem;
+        width: 150px; /* Shrink button size for smaller screens */
+        font-size: 1rem;
+    }
+
+    .certification-icons {
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 2rem; /* Smaller heading size on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .certi-gomb {
+        height: 6rem;
+        width: 120px; /* Further shrink button size for mobile screens */
+        font-size: 0.9rem;
+    }
+
+    .certification-icons {
+        gap: 10px;
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Even smaller heading size on very small screens */
+    }
+}
 
 
 

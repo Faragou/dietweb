@@ -1,75 +1,139 @@
 /* Services.css */
 
 #services {
-    background: #bbd2c5; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #bbd2c5, #536976);
-    padding: 50px 0;
-    text-align: center;
+  scroll-snap-align: start;
+  padding: 50px 0;
+  text-align: center;
+  background: #bbd2c5;
+  background: -webkit-linear-gradient(to right, #bbd2c5, #536976);
+  background: linear-gradient(to right, #bbd2c5, #536976);
+  margin-bottom: 0px; /* Add a bottom margin to separate services from the references */
 }
 
 .services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Ensure cards wrap on small screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px; /* Add gap between the service cards */
 }
 
 .service {
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px);
 }
 
 .service h3 {
-    color: #333;
+  color: #333;
 }
 
 .service p {
-    color: #666;
-    margin-bottom: 10px;
+  color: #666;
+  margin-bottom: 10px;
 }
 
 .join-button {
-    background-image: linear-gradient(to right, #437c5c, #536976, #bbd2c5);
-    box-shadow: 0 4px 15px 0 rgba(84, 206, 131, 0.75);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-image: linear-gradient(to right, #437c5c, #536976, #bbd2c5);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 55px;
+  margin: 20px auto;
+  display: block;
 }
-
-.join-button {
-    width: 200px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    margin: 20px;
-    height: 55px;
-    text-align:center;
-    border: none;
-    background-size: 300% 100%;
-
-    border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
 
 .join-button:hover {
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+  background-position: 100% 0;
+}
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin: 10px 0;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit-button {
+    background-color: #437c5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service {
+    width: 90%; /* Make the cards take full width on smaller screens */
+    margin: 10px 0; /* Reduce the margin on smaller screens */
+  }
+
+  .services-container {
+    flex-direction: column; /* Stack the services vertically on small screens */
+    padding: 20px; /* Ensure padding for better spacing */
+  }
+
+  .modal-content {
+        width: 90%;
+    }
 }
