@@ -9,7 +9,7 @@ const Certifications = () => {
             <h2>Certifications & Awards</h2>
             <div className="certification-icons">
                 <button className='certi-gomb'>
-                    <span className="text">Vegan Diet Certification</span>
+                    <span className="text" id="asd" >Vegan Diet Certification</span>
                     <span className="shimmer"></span>
                 </button>
                 <button className='certi-gomb'>

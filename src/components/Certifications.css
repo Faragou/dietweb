@@ -221,20 +221,6 @@
     z-index: 2;
 }
 
-.certi-gomb .text {
-    color: var(--bg);
-    background-color: var(--bg);
-    background-image: linear-gradient(
-        120deg,
-        transparent,
-        hsla(var(--glow-hue), 88%, 80%, 0.66) 40%,
-        hsla(var(--glow-hue), 100%, 90%, 0.9) 50%,
-        transparent 52%
-    );
-    background-repeat: no-repeat;
-    background-size: 300% 300%;
-    background-position: center 200%;
-}
 
 .certi-gomb:hover .text,
 .certi-gomb.active .text {
