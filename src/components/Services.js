@@ -28,6 +28,7 @@ const Services = () => {
             <div className="services-container">
                 <div className="service">
                     <h3>Personalized Meal Plans</h3>
+                    <h3>Personalized Meal Plans</h3>
                     <p>Get customized meal plans based on your dietary preferences and goals.</p>
                     <p><b>Price: $49/month</b></p>
                     <button className="join-button" onClick={() => openModal('Personalized Meal Plans')}>Join the Program</button>
