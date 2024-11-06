@@ -1,13 +1,19 @@
 /* Certifications.css */
 
 #certifications {
-    scroll-snap-align: start; /* Snap alignment at the start */
-    height: 100vh; /* Full viewport height */
+    scroll-snap-align: start;
+    height: 50vh;
     padding: 50px;
-    background: #bbd2c5; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
+    background: #bbd2c5;
+    background: -webkit-linear-gradient(to right, #bbd2c5, #536976);
     background: linear-gradient(to right, #bbd2c5, #536976);
     text-align: center;
+}
+
+#certifications h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .certification-icons {
@@ -15,6 +21,7 @@
     margin: 5rem;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 20px; /* Add space between buttons */
 }
 
 .certification-icon {
@@ -133,26 +140,47 @@
 */
 
 .certi-gomb {
-    color: var(--bg);
+    color: #ffffff;
     height: 10rem;
     width: 200px;
-    font-weight: 1000;
+    font-weight: 700;
     background-color: #0093E9;
-    background-image: linear-gradient(160deg, #437c5c, #536976 100%);
+    background-image: linear-gradient(160deg, #4e9f6e, #1c3c4c 100%);
     padding: 0.8em 1.4em;
     position: relative;
     isolation: isolate;
-    box-shadow: 0 2px 3px 1px hsl(var(--glow-hue) 50% 20% / 50%),
-        inset 0 -10px 20px -10px hsla(var(--shadow-hue), 10%, 90%, 95%);
-    border-radius: 0.66em;
-    transition: all 0.5s ease;
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.3), 
+        inset 0 -10px 20px -10px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    
-    scale: 1;
-    transition: all var(--spring-duration) var(--spring-easing);
+}
+
+.certi-gomb .text {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.certi-gomb:hover .text {
+    color: #FFD700; /* Gold color on hover */
+    text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8);
+}
+
+.certi-gomb:hover {
+    scale: 1.05;
+    box-shadow: 
+        0 8px 12px rgba(0, 0, 0, 0.3), 
+        inset 0 -15px 25px -10px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(160deg, #6bbf73, #2f4e5f 100%);
 }
 
 .certi-gomb:hover:not(:active),
@@ -228,6 +256,9 @@
 }
 
 @media (max-width: 768px) {
+    #certifications {
+        padding-top: 20px !important;
+    }
     .certi-gomb {
         height: 8rem;
         width: 150px; /* Shrink button size for smaller screens */
@@ -245,12 +276,23 @@
 }
 
 @media (max-width: 480px) {
+
+    #certifications {
+        height: 100vh;
+    }
+    
     .certi-gomb {
         height: 6rem;
         width: 120px; /* Further shrink button size for mobile screens */
-        font-size: 0.9rem;
+        
     }
 
+    .certi-gomb .text {
+        font-size: 0.8rem; /* Smaller text size on mobile */
+    }
+    .certification-icon {
+        margin: 0px;
+    }
     .certification-icons {
         gap: 10px;
     }
@@ -260,5 +302,16 @@
     }
 }
 
+@media (max-width: 350px){
+.certi-gomb {
+        height: 6rem;
+        width: 200px; /* Further shrink button size for mobile screens */
+        
+    }
 
+    .certi-gomb .text {
+        font-size: 0.8rem; /* Smaller text size on mobile */
+    }
+
+}
 
