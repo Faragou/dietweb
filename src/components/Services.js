@@ -1,5 +1,3 @@
-// Services.js
-
 import React, { useState } from 'react';
 import './Services.css';
 
@@ -16,11 +14,7 @@ const Services = () => {
         setShowModal(false);
     };
 
-    const handleOutsideClick = (e) => {
-        if (e.target.className === 'modal') {
-            closeModal();
-        }
-    };
+    
 
     return (
         <section id="services">
